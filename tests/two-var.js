@@ -18,15 +18,15 @@ eslintTester.addRuleTest("rules/two-var", {
 	invalid: [
 		{
 			code: "var x = 1; var y = 1;",
-			errors: [ { message: "Unexpected invalid variable." } ]
+			errors: [ { message: "Combine this with the previous \'var\' statement." } ]
 		},
 		{
 			code: "var x = require('z'), y = 1;",
-			errors: [ { message: "Unexpected invalid variable." } ]
+			errors: [ { message: "Do not mix \'require\' and other declarations." } ]
 		},
 		{
 			code: "var x = require('a'); var y = require('b');",
-			errors: [ { message: "Unexpected invalid variable." } ]
+			errors: [ { message: "Combine this with the previous \'var\' statement." } ]
 		}
 	]
 });
