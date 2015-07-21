@@ -1,0 +1,31 @@
+{
+  "name": "eslint-plugin-twovar",
+  "version": "1.0.0",
+  "description": "Combines the rules for one-var and no-mixed-requires to allow two separate variable declarations, one for the require calls and one for local variables.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/.bin/eslint --rulesdir lib ./ && node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewed/eslint-plugin-twovar.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint",
+    "plugin",
+    "one-var",
+    "no-mixed-requires",
+    "two-var"
+  ],
+  "author": "\"Andrew Wheelwright\" <andrew.wheelwright@familysearch.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewed/eslint-plugin-twovar/issues"
+  },
+  "homepage": "https://github.com/drewed/eslint-plugin-twovar#readme",
+  "devDependencies": {
+    "eslint": "^0.24.1",
+    "eslint-tester": "^0.8.2"
+  }
+}
